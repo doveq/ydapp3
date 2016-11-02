@@ -115,6 +115,7 @@ export default class Login extends Component
                         value={this.state.name}
                         autoCapitalize='none'
                         maxLength={12}
+						underlineColorAndroid = '#292C35'
                     />
                 </View>
                 <View style={styles.item}>
@@ -126,6 +127,7 @@ export default class Login extends Component
                         autoCapitalize='none'
                         maxLength={32}
                         secureTextEntry={true}
+						underlineColorAndroid = '#292C35'
                     />
                 </View>
 

@@ -152,6 +152,7 @@ class Article extends Component
 				<View style={{flexDirection: 'row', paddingLeft:10, paddingTop:15, paddingRight:10, paddingBottom:15,borderColor: '#dfdfdf', borderTopWidth: 1,}}>
 					<View style={{ borderColor: '#dfdfdf', borderWidth: 1,flex:1,}}>
 					   <TextInput style={{backgroundColor: '#f7f7f7', height:38,}}
+					   		underlineColorAndroid = {'transparent'}
 					   		multiline={true}
 							onChange={(event) => {
 								this.setState({
