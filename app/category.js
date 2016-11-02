@@ -51,9 +51,9 @@ class Category extends Component
 		return (
 			<View style={styles.container}>
 				<View style={styles.topnav}>
-					<TouchableOpacity style={styles.navleft} onPress={() => this.navigator.pop()} ><Icon name="arrow-left" size={24} color="#fff" /></TouchableOpacity>
+					<TouchableOpacity style={styles.navleft} onPress={() => this.props.navigator.pop()} ><Icon name="arrow-left" size={24} color="#fff" /></TouchableOpacity>
 					<Text style={styles.navtit}>栏目</Text>
-					<TouchableOpacity style={styles.navright} onPress={() => this.navigator.push({name:'commentPage',params:{postId:this.props.id} })}><Icon name="search" size={24} color="#fff" /></TouchableOpacity>
+					<TouchableOpacity style={styles.navright} onPress={() => this.props.navigator.push({name:'searchPage'})}><Icon name="search" size={24} color="#fff" /></TouchableOpacity>
 				</View>
 				<ScrollableTabView
 					tabBarBackgroundColor="#fff"
