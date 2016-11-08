@@ -49,6 +49,7 @@ export default class Search extends Component
 				</View>
 
                 <View style={styles.item}>
+					<View style={styles.bdr}>
                     <TextInput
                         style={{height: 40, borderColor: '#000000',}}
                         placeholder='搜索'
@@ -56,7 +57,10 @@ export default class Search extends Component
                         value={this.state.name}
                         autoCapitalize='none'
                         maxLength={12}
+						underlineColorAndroid = 'transparent'
+						selectionColor= '#292C35'
                     />
+					</View>
                 </View>
 
 				<View style={{backgroundColor: '#000000',borderRadius:5, padding:10,marginTop:20,marginLeft:20,marginRight:20,}}>
@@ -111,5 +115,9 @@ const styles = StyleSheet.create({
       fontSize: 20,
       textAlign: 'center',
       marginTop:10,
+  },
+  bdr: {
+	  borderBottomColor: '#292C35',
+	  borderBottomWidth: 1,
   },
 });

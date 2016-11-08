@@ -10,7 +10,8 @@ import {
   	ScrollView,
   	Text,
   	TouchableOpacity,
-  	View
+  	View,
+	StatusBar,
 } from 'react-native';
 
 import { connect } from 'react-redux';
@@ -61,6 +62,7 @@ export default class Home extends Component
 			  	tweenHandler={Drawer.tweenPresets.parallax}
 				open={false}
 				>
+				<StatusBar hidden={true} />
 
 					<View style={styles.container}>
 						<View style={styles.topnav}>

@@ -12,6 +12,7 @@ import {
   	BackAndroid,
   	Platform,
   	ToastAndroid,
+	StatusBar,
 } from 'react-native';
 
 import configureStore from './redux/store'

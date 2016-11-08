@@ -108,6 +108,7 @@ export default class Login extends Component
 				</View>
 
                 <View style={styles.item}>
+					<View style={styles.bdr}>
                     <TextInput
                         style={{height: 40, borderColor: '#000000',}}
                         placeholder='用户名'
@@ -115,10 +116,13 @@ export default class Login extends Component
                         value={this.state.name}
                         autoCapitalize='none'
                         maxLength={12}
-						underlineColorAndroid = '#292C35'
+						underlineColorAndroid = 'transparent'
+						selectionColor= '#292C35'
                     />
+					</View>
                 </View>
                 <View style={styles.item}>
+					<View style={styles.bdr}>
                     <TextInput
                         style={{height: 40, borderColor: '#000000',}}
                         placeholder='登录密码'
@@ -127,8 +131,10 @@ export default class Login extends Component
                         autoCapitalize='none'
                         maxLength={32}
                         secureTextEntry={true}
-						underlineColorAndroid = '#292C35'
+						underlineColorAndroid = 'transparent'
+						selectionColor= '#292C35'
                     />
+					</View>
                 </View>
 
                 {btn}
@@ -182,5 +188,9 @@ const styles = StyleSheet.create({
       fontSize: 20,
       textAlign: 'center',
       marginTop:10,
+  },
+  bdr: {
+	  borderBottomColor: '#292C35',
+	  borderBottomWidth: 1,
   },
 });

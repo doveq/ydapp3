@@ -158,7 +158,8 @@ export default class Register extends Component
 	                        value={this.state.name}
 	                        autoCapitalize='none'
 	                        maxLength={12}
-							underlineColorAndroid = '#292C35'
+							underlineColorAndroid = 'transparent'
+							selectionColor= '#292C35'
 	                    />
 					</View>
                 </View>
@@ -173,7 +174,8 @@ export default class Register extends Component
                         autoCapitalize='none'
                         keyboardType='email-address'
                         maxLength={32}
-						underlineColorAndroid = '#292C35'
+						underlineColorAndroid = 'transparent'
+						selectionColor= '#292C35'
                     />
 					</View>
                 </View>
@@ -188,7 +190,8 @@ export default class Register extends Component
                         autoCapitalize='none'
                         maxLength={32}
                         secureTextEntry={true}
-						underlineColorAndroid = '#292C35'
+						underlineColorAndroid = 'transparent'
+						selectionColor= '#292C35'
                     />
 					</View>
                 </View>
@@ -203,7 +206,8 @@ export default class Register extends Component
                         autoCapitalize='none'
                         maxLength={32}
                         secureTextEntry={true}
-						underlineColorAndroid = '#292C35'
+						underlineColorAndroid = 'transparent'
+						selectionColor= '#292C35'
                     />
 					</View>
                 </View>
@@ -261,9 +265,7 @@ const styles = StyleSheet.create({
       marginTop:10,
   },
   bdr: {
-	  /*
 	  borderBottomColor: '#292C35',
 	  borderBottomWidth: 1,
-	  */
   }
 });
